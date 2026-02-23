@@ -15,6 +15,7 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -32,7 +33,6 @@ import jakarta.persistence.OrderBy;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.NotBlank;
-import org.eclipse.collections.impl.list.mutable.FastList;
 
 /**
  * Simple JavaBean domain object representing an owner.
@@ -64,7 +64,7 @@ public class Owner extends Person {
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "owner_id")
 	@OrderBy("name")
-	private final List<Pet> pets = FastList.newList();
+	private final List<Pet> pets = new ArrayList<>();
 
 	public String getAddress() {
 		return this.address;
