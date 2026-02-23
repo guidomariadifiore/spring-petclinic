@@ -15,11 +15,11 @@
  */
 package org.springframework.samples.petclinic.vet;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import org.eclipse.collections.impl.list.mutable.FastList;
 
 /**
  * Simple domain object representing a list of veterinarians. Mostly here to be used for
@@ -35,7 +35,7 @@ public class Vets {
 	@XmlElement
 	public List<Vet> getVetList() {
 		if (vets == null) {
-			vets = new ArrayList<>();
+			vets = new FastList<>();
 		}
 		return vets;
 	}

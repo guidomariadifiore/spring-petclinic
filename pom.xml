@@ -156,7 +156,26 @@
       <artifactId>testcontainers-mysql</artifactId>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+  
+        <!-- Eclipse Collections -->
+        <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections-api</artifactId>
+            <version>11.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections</artifactId>
+            <version>11.1.0</version>
+        </dependency>
+
+        <!-- Apache Commons Collections -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.4</version>
+        </dependency>
+    </dependencies>
 
   <build>
     <plugins>
@@ -208,7 +227,26 @@
             <artifactId>nohttp-checkstyle</artifactId>
             <version>${nohttp-checkstyle.version}</version>
           </dependency>
-        </dependencies>
+        
+        <!-- Eclipse Collections -->
+        <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections-api</artifactId>
+            <version>11.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections</artifactId>
+            <version>11.1.0</version>
+        </dependency>
+
+        <!-- Apache Commons Collections -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.4</version>
+        </dependency>
+    </dependencies>
         <executions>
           <execution>
             <id>nohttp-checkstyle-validation</id>
